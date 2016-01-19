@@ -37,6 +37,13 @@
 
      var limit = prompt("Please set the upper limit to play FizzBuzz.");
 
-     fizzbuzz(limit);
+     var userInputCorrect = true;
 
+     while (Math.floor(limit) != limit) {
+         var limit = prompt("Your upper limit was not correct. Set it again.");
+         userInputCorrect = false;
+     }
+     if (userInputCorrect = true) {
+         fizzbuzz(limit);
+     }
  });
